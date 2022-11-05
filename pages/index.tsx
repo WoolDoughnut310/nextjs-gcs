@@ -45,7 +45,6 @@ export default function Home() {
                         alt="Upload icon"
                         width={50}
                         height={50}
-                        className="back"
                     />
                 </button>
             </main>

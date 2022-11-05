@@ -28,5 +28,3 @@ app.use(express.json());
         console.log(`> Ready on http://localhost:${port}`);
     });
 })();
-
-// export { }

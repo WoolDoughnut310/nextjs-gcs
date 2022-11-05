@@ -19,7 +19,10 @@ const uploadStream = (file: formidable.File) => {
     return pass;
 };
 
-export const method1 = async (req: IncomingMessage, res: NextApiResponse) => {
+export const method1 = async (
+    req: NextApiRequest | IncomingMessage,
+    res: NextApiResponse | Response
+) => {
     const form = formidable();
 
     const { files } = await parseForm(form, req);

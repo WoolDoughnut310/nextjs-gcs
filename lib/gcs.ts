@@ -1,7 +1,7 @@
 import { Storage } from "@google-cloud/storage";
 
 const storage = new Storage({
-    keyFilename: "musicspace-358910-09c8f29d259f.json",
+    keyFilename: "KEY_FILENAME.json",
 });
 
 const bucket = storage.bucket(process.env.GCS_BUCKET as string);
